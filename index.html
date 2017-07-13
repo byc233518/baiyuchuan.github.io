@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title></title>
+  <link rel="stylesheet" href="css/amazeui.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/amazeui.min.js"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
+<header class="am-topbar">
+  <h1 class="am-topbar-brand">
+    <a href="#"></a>
+  </h1>
+  
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+          data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+    class="am-icon-bars"></span></button>
+  
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">项目</a></li>
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          菜单 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">标题</li>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">关于字体</a></li>
+          <li><a href="#">TIPS</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search">
+      <div class="am-form-group">
+        <input type="text" class="am-form-field am-input-sm" placeholder="搜索文章">
+      </div>
+      <button type="submit" class="am-btn am-btn-default am-btn-sm">搜索</button>
+    </form>
+  
+  </div>
+</header>
 
-<h1>first page!123</h1>
-	
+<div class="am-g doc-am-g">
+  <div class="am-u-sm-6 am-u-md-8 am-u-lg-9">
+    <div class="am-panel am-panel-default">
+      <div class="am-panel-hd">文章</div>
+      <div class="am-panel-bd">
+        <ul>
+          <li><a href="https://byc1990.github.io/demo/pactera/leave/">请假指引</a></li>
+          <li><a href="https://byc1990.github.io/demo/pactera/clock/">打卡指引</a></li>
+          <li><a href="https://pan.baidu.com/s/1eSqLmDW">美的刷卡打印机驱动及使用方法</a></li>
+          <li><a href="http://baiyuchuan.com/demo/pactera/kaoqin.html">考勤明细查询</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="am-u-sm-6 am-u-md-4 am-u-lg-3">
+    <div class="am-panel am-panel-default">
+      <div class="am-panel-hd">分类</div>
+      <div class="am-panel-bd">
+        <ul>
+          <li><a href="#">链接</a></li>
+          <li><a href="#">链接</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </body>
 </html>
